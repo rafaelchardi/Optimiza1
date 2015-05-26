@@ -1,11 +1,12 @@
 package com.optimizatecnologia.optimizatecnologia.optimiza;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by Usuario on 26/05/2015.
  */
-public class Ords {
+public class Ords implements Serializable {
     private int ords_key;
     private int ordsnumb;
     private String ordsstatcode;

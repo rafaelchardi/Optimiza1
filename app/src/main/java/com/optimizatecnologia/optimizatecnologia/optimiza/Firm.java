@@ -1,9 +1,11 @@
 package com.optimizatecnologia.optimizatecnologia.optimiza;
 
+import java.io.Serializable;
+
 /**
  * Created by Usuario on 26/05/2015.
  */
-public class Firm {
+public class Firm implements Serializable {
     private String firmcode;
     private String firmniff;
     private String firmnamecome;

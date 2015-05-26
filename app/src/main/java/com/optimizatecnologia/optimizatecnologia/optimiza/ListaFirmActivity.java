@@ -1,17 +1,58 @@
 package com.optimizatecnologia.optimizatecnologia.optimiza;
 
+import android.app.FragmentManager;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 
 
-public class ListaFirmActivity extends ActionBarActivity {
+public class ListaFirmActivity extends ActionBarActivity   implements AdapterView.OnItemClickListener {
+
+    ListaFirmFragment listafirmfragment;
+    DetalleFirmFragment detallefirmfragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_firm);
+
+        FragmentManager fragmentManager = getFragmentManager();
+
+        listafirmfragment = (ListaFirmFragment) fragmentManager
+                .findFragmentById(R.id.listafirmfragment1);
+
+        detallefirmfragment = (DetalleFirmFragment) fragmentManager
+                .findFragmentById(R.id.detallefirmfragment1);
+
+
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        //Definir el listener para el onclick sobre la lista
+        listafirmfragment.setOnItemClickListener(this);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+        Firm item = (Firm) parent.getItemAtPosition(position);
+
+        if (detallefirmfragment != null){
+            //Estamos en un tablet
+            detallefirmfragment.actualizarDetalle(item);
+        } else {
+            //Estasmos en un smartphone
+            Intent intent = new Intent(this, DetalleFirmActivity.class);
+            intent.putExtra(DetalleFirmActivity.KEY_FIRM_ITEM, item);
+            startActivity(intent);
+        }
     }
 
     @Override

@@ -32,6 +32,10 @@
             android:name=".ListaLocaActivity"
             android:label="@string/title_activity_lista_loca" >
         </activity>
+        <activity
+            android:name=".DetalleFirmActivity"
+            android:label="@string/title_activity_detalle_firm" >
+        </activity>
     </application>
 
 </manifest>

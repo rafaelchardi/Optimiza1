@@ -6,6 +6,7 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -19,17 +20,16 @@ import java.util.List;
  */
 public class ListaFirmFragment extends Fragment {
 
-
-    public ListaFirmFragment() {
-        // Required empty public constructor
-    }
+    private ListView listado;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_lista_firm, container, false);
+        View view =  inflater.inflate(R.layout.fragment_lista_firm, container);
+        return view;
+
     }
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -41,12 +41,16 @@ public class ListaFirmFragment extends Fragment {
                 new Firm("0003")
         );
 
-        ListView listado = (ListView) getActivity().findViewById(R.id.listViewClientes);
+        listado = (ListView) getActivity().findViewById(R.id.listViewClientes);
 
         ListAdapter adaptadorCorreos = new ArrayAdapter<Firm>(
                 getActivity(),android.R.layout.simple_list_item_1,list);
 
         listado.setAdapter(adaptadorCorreos);
+    }
+
+    public void setOnItemClickListener(AdapterView.OnItemClickListener listener){
+        listado.setOnItemClickListener(listener);
     }
 
 }

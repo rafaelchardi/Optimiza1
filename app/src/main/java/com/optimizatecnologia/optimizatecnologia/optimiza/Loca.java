@@ -1,9 +1,11 @@
 package com.optimizatecnologia.optimizatecnologia.optimiza;
 
+import java.io.Serializable;
+
 /**
  * Created by Usuario on 26/05/2015.
  */
-public class Loca {
+public class Loca implements Serializable {
     private String locacode;
     private String locafirmtype;
     private Firm locafirmCode;

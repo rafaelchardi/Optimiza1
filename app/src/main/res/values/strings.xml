@@ -17,4 +17,7 @@
     <string name="locales">Locales</string>
     <string name="action_locales">Locales</string>
     <string name="title_activity_lista_loca">ListaLocaActivity</string>
+    <string name="title_activity_detalle_firm">DetalleFirmActivity</string>
+    <string name="Codigo">Codigo</string>
+    <string name="Nombre">Nombre</string>
 </resources>
