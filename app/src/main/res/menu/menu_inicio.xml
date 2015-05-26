@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".inicio">
+    <item android:id="@+id/action_clientes" android:title="@string/action_clientes"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_locales" android:title="@string/action_locales"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_avisos" android:title="@string/action_avisos"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+</menu>
