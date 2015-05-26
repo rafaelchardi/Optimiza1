@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="59dp"
+        android:id="@+id/imageView2"
+        android:src="@android:drawable/ic_menu_set_as" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="txfirmnamecome"
+            android:id="@+id/txfirmnamecome" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="firmcode"
+                android:id="@+id/firmcode" />
+
+            <TextView
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:text="firmTel1"
+                android:id="@+id/firmTel1"
+                android:gravity="right"
+                android:layout_weight="0.07" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -45,11 +45,33 @@ public class DetalleFirmFragment extends Fragment {
 
         EditText editTextFirmCode = (EditText) getActivity().findViewById(R.id.editTextFirmCode);
         EditText editTextFirmName = (EditText) getActivity().findViewById(R.id.editTextFirmName);
-
+        EditText editTextFirmNif = (EditText) getActivity().findViewById(R.id.editTextFirmNif);
+        EditText editTextfirmTel1 = (EditText) getActivity().findViewById(R.id.editTextfirmTel1);
+        EditText editTextfirmdire = (EditText) getActivity().findViewById(R.id.editTextfirmdire);
+        EditText editTextfirmPolbDesc = (EditText) getActivity().findViewById(R.id.editTextfirmPolbDesc);
+        EditText editTextfirmProvDesc = (EditText) getActivity().findViewById(R.id.editTextfirmProvDesc);
+        EditText editTextfirmmail = (EditText) getActivity().findViewById(R.id.editTextfirmmail);
 
 
         editTextFirmCode.setText(item.getFirmcode());
         editTextFirmName.setText(item.getFirmnamecome());
+        editTextFirmNif.setText(item.getFirmniff());
+        editTextfirmTel1.setText(item.getFirmTel1());
+        editTextfirmdire.setText(item.getFirmdire());
+        editTextfirmPolbDesc.setText(item.getFirmPolbDesc());
+        editTextfirmProvDesc.setText(item.getFirmProvDesc());
+        editTextfirmmail.setText(item.getFirmmail());
+
+        editTextFirmCode.setEnabled(false);
+        editTextFirmName.setEnabled(false);
+        editTextFirmNif.setEnabled(false);
+        editTextfirmTel1.setEnabled(false);
+        editTextfirmdire.setEnabled(false);
+        editTextfirmPolbDesc.setEnabled(false);
+        editTextfirmProvDesc.setEnabled(false);
+        editTextfirmmail.setEnabled(false);
+
+
 
     }
 

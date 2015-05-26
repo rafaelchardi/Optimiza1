@@ -15,6 +15,13 @@ public class Firm implements Serializable {
     private String firmProvDesc;
     private String firmmail;
 
+    public Firm(String firmcode, String firmniff, String firmnamecome, String firmTel1) {
+        this.firmcode = firmcode;
+        this.firmniff = firmniff;
+        this.firmnamecome = firmnamecome;
+        this.firmTel1 = firmTel1;
+    }
+
     public Firm(String firmcode) {
         this.firmcode = firmcode;
     }

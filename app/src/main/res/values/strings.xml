@@ -8,16 +8,20 @@
     <string name="OptimizaTecnologia">Optimiza Tecnologia S.L.</string>
     <string name="Clientes">Clientes</string>
     <string name="Avisos">Avisos</string>
-    <string name="title_activity_avisos">AvisosActivity</string>
-    <string name="title_activity_lista_avisos">ListaAvisosActivity</string>
+    <string name="title_activity_avisos">Avisos</string>
+    <string name="title_activity_lista_avisos">Lista Avisos</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_lista_firm">ListaFirmActivity</string>
+    <string name="title_activity_lista_firm">Lista Clientes</string>
     <string name="locales">Locales</string>
     <string name="action_locales">Locales</string>
-    <string name="title_activity_lista_loca">ListaLocaActivity</string>
-    <string name="title_activity_detalle_firm">DetalleFirmActivity</string>
+    <string name="title_activity_lista_loca">Lista Locales</string>
+    <string name="title_activity_detalle_firm">Detalle Clientes</string>
     <string name="Codigo">Codigo</string>
     <string name="Nombre">Nombre</string>
+    <string name="Dni">NIF</string>
+    <string name="Telefono">Telefono</string>
+    <string name="Direccion">Direccion</string>
+    <string name="email">Correo Electronico</string>
 </resources>
